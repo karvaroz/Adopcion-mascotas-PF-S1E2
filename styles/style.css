@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: var(--bg-color);
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --bg-color: #fec7d7;
+  --black-color: #0e172c;
+  --grey-color: #535353;
+  --white-color: #fffffe;
+}
+
+body{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.find_loyal_friend, .create_new_story{
+  width: 327px;
+  height: 489px;
+}
+
+.find_loyal_friend_txt h1, .create_new_story_txt h1 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: var(--black-color);
+}
+
+.find_loyal_friend_txt p, .create_new_story_txt p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  margin-top: 10px;
+  color: var(--grey-color);
+}
+
+
+.find_loyal_friend_btn button, .create_new_story_btn button {
+  width: 327px;
+  height: 48px;
+  left: 24px;
+  margin-top: 60px;
+  border-radius: 98px;
+  background-color: var(--black-color);
+  letter-spacing: 0.0125em;
+  color: var(--white-color);
+  cursor: pointer;
+}
