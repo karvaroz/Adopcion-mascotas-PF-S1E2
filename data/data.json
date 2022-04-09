@@ -67,45 +67,11 @@
             ],
             "story": "Bombón es un gato muy cariñoso, que le gusta mucho jugar con sus amigos. Le gusta mucho jugar con sus amigos, pero no le gusta mucho jugar con los demás gatos. Bombón es un gato muy cariñoso, que le gusta mucho jugar con sus amigos. Le gusta mucho jugar con sus amigos, pero no le gusta mucho jugar con los demás gatos.",
             "published": "Maria Dolores"
-        },
-        {
-            "id": 5,
-            "name": "Paco",
-            "gender": "Male",
-            "breed": "British Shorthair",
-            "age": "24 Meses",
-            "address": "4140 Parker Rd. Allentown, New Mexico 31134",
-            "species": "gato",
-            "image": "/images/img-gato-5.png",
-            "personality": [
-                "Cariñoso",
-                "Inquieto",
-                "Juguetón"
-            ],
-            "story": "Paco es un gato muy cariñoso, que le gusta mucho jugar con sus amigos. Le gusta mucho jugar con sus amigos, pero no le gusta mucho jugar con los demás gatos. Paco es un gato muy cariñoso, que le gusta mucho jugar con sus amigos. Le gusta mucho jugar con sus amigos, pero no le gusta mucho jugar con los demás gatos.",
-            "published": "Juan Jesus"
-        },
-        {
-            "id": 6,
-            "name": "Theodoro",
-            "gender": "Male",
-            "breed": "Gato Persa",
-            "age": "30 Meses",
-            "address": "4140 Parker Rd. Allentown, New Mexico 31134",
-            "species": "gato",
-            "image": "/images/img-gato-6.png",
-            "personality": [
-                "Cariñoso",
-                "Inquieto",
-                "Juguetón"
-            ],
-            "story": "Theodoro es un gato muy cariñoso, que le gusta mucho jugar con sus amigos. Le gusta mucho jugar con sus amigos, pero no le gusta mucho jugar con los demás gatos. Theodoro es un gato muy cariñoso, que le gusta mucho jugar con sus amigos. Le gusta mucho jugar con sus amigos, pero no le gusta mucho jugar con los demás gatos.",
-            "published": "Maria Dolores"
         }
     ],
     "perros": [
         {
-            "id": 7,
+            "id": 5,
             "name": "Rocky",
             "gender": "Male",
             "breed": "Rottweiler",
@@ -122,7 +88,7 @@
             "published": "Maria Dolores"
         },
         {
-            "id": 8,
+            "id": 6,
             "name": "Linda",
             "gender": "Female",
             "breed": "Yorkshire Terrier",
@@ -139,7 +105,7 @@
             "published": "Juan Jesus"
         },
         {
-            "id": 9,
+            "id": 7,
             "name": "Papi",
             "gender": "Male",
             "breed": "Lobo Siberiano",
@@ -156,7 +122,7 @@
             "published": "Maria Dolores"
         },
         {
-            "id": 10,
+            "id": 8,
             "name": "Gala y Bola",
             "gender": "Female - Male",
             "breed": "Bull Terrier",
@@ -171,40 +137,6 @@
             ],
             "story": "Papi es un perrito muy lindo y cariñoso, tiene 5 hermanitos más y por cuestiones de espacio y tiempo no podremos cuidar a todos, nuestra misión es encontrar la familia ideal para él y seguro que tú eres la persona indicada.",
             "published": "Juan Jesus"
-        },
-        {
-            "id": 11,
-            "name": "Chester",
-            "gender": "Male",
-            "breed": "Border Collie",
-            "age": "24 Meses",
-            "address": "4140 Parker Rd. Allentown, New Mexico 31134",
-            "species": "perro",
-            "image": "/images/img-perro-5.png",
-            "personality": [
-                "Cariñoso",
-                "Inquieto",
-                "Juguetón"
-            ],
-            "story": "Chester es un perrito muy lindo y cariñoso, tiene 5 hermanitos más y por cuestiones de espacio y tiempo no podremos cuidar a todos, nuestra misión es encontrar la familia ideal para él y seguro que tú eres la persona indicada.",
-            "published": "Maria Dolores"
-        },
-        {
-            "id": 12,
-            "name": "Luna",
-            "gender": "Male",
-            "breed": "Schnauzer",
-            "age": "24 Meses",
-            "address": "4140 Parker Rd. Allentown, New Mexico 31134",
-            "species": "perro",
-            "image": "/images/img-perro-6.png",
-            "personality": [
-                "Cariñoso",
-                "Inquieto",
-                "Juguetón"
-            ],
-            "story": "Luna es un perrito muy lindo y cariñoso, tiene 5 hermanitos más y por cuestiones de espacio y tiempo no podremos cuidar a todos, nuestra misión es encontrar la familia ideal para él y seguro que tú eres la persona indicada.",
-            "published": "Maria Dolores"
         }
     ]
 }

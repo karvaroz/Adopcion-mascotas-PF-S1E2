@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Adopción Mascotas | Proyecto Final</title>
+</head>
+<style>
+    .intro {
+        position: fixed;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 375px;
+        height: 812px;
+    }
+
+    .message_header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 24px;
+        background: var(--white-color);
+        width: 375px;
+        height: 120px;
+    }
+
+    .message_header img {
+        border: 3px solid #85D1CE;
+    }
+
+    .message_header p {
+        letter-spacing: 0.005em;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--black-color);
+    }
+
+    .messages_container {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.005em;
+        width: 100%;
+        padding: 100px;
+    }
+
+    .chat_container input {
+        width: 359px;
+        height: 48px;
+        border: 1px solid #535353;
+        box-sizing: border-box;
+        border-radius: 4px;
+        background: var(--white-color);
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+</style>
+
+<body class="intro">
+    <section class="message_header">
+        <img src="/images/perfil-img.png" alt="perfil">
+        <p>Juan Méndez</p>
+    </section>
+    <div class="messages_container">
+        <p>Aún no hay mensajes</p>
+    </div>
+    <section class="chat_container">
+        <input type="text" placeholder="Aa">
+        <img src="/images/chat.png" alt="">
+    </section>
+
+</body>
+
+</html>
