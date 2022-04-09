@@ -7,10 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style.css">
     <title>Adopción Mascotas | Proyecto Final</title>
-
 </head>
+<style>
+    .intro {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
-<body>
+    .find_loyal_friend {
+        width: 327px;
+        height: 489px;
+    }
+
+    .find_loyal_friend_txt h1 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: var(--black-color);
+    }
+
+    .find_loyal_friend_txt p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.005em;
+        margin-top: 10px;
+        color: var(--grey-color);
+    }
+
+    .find_loyal_friend_btn button {
+        width: 327px;
+        height: 48px;
+        left: 24px;
+        margin-top: 60px;
+        border-radius: 98px;
+        background-color: var(--black-color);
+        letter-spacing: 0.0125em;
+        color: var(--white-color);
+        cursor: pointer;
+    }
+</style>
+
+<body class="intro">
     <div class="find_loyal_friend">
         <div class="find_loyal_friend_img">
             <img src="/images/esperando-adopcion.png" alt="esperando-adopcion">
@@ -23,7 +65,9 @@
             </p>
         </div>
         <div class="find_loyal_friend_btn">
-            <button>Siguiente</button>
+            <a href="./create.html">
+                <button>Siguiente</button>
+            </a>
         </div>
     </div>
 
