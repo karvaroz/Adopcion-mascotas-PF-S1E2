@@ -13,15 +13,28 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      /* transform: translate(-50%, -34.2%); */
       width: 375px;
       height: 729px;
-      /* height: 1064px; */
+    }
+
+    .card_detail_img {
+      position: relative;
     }
 
     .card_detail_img img {
       width: 375px;
       height: 442px;
+      position: absolute;
+      transform: translate(0%, -35%);
+    }
+
+    .card_detail_info {
+      width: 375px;
+      position: absolute;
+      top: 30%;
+      border: var(--white-color) solid 1px;
+      border-radius: 16px;
+      background-color: var(--white-color);
     }
 
     .card_detail_info_name {
@@ -29,27 +42,43 @@
       width: 90%;
       gap: 10px;
       margin-top: 5px;
+      background-color: var(--white-color);
     }
 
     .card_detail_info_title {
       margin: 5px;
       display: flex;
+      background-color: var(--white-color);
+    }
+    .card_detail_info_name p {
+      background-color: var(--white-color);
     }
 
     .card_detail_info_name {
       font-weight: 800;
       font-size: 24px;
       line-height: 33px;
+      background-color: var(--white-color);
     }
 
     .card_detail_info_name img {
       width: 32px;
       height: 32px;
+      background-color: var(--white-color);
+    }
+
+    .card_detail_info_btn {
+      background-color: var(--white-color);
     }
 
     .card_detail_info_btn img {
       width: 48px;
       height: 48px;
+      background-color: var(--white-color);
+      border-radius: 50%;
+    }
+    .card_detail_info_breed_age img {
+      background-color: var(--white-color);
     }
 
     .card_detail_info_breed_age {
@@ -57,6 +86,7 @@
       display: flex;
       justify-content: flex-start;
       gap: 100px;
+      background-color: var(--white-color);
     }
 
     .card_detail_info_breed_age p {
@@ -65,6 +95,7 @@
       line-height: 19px;
       letter-spacing: 0.005em;
       color: #535353;
+      background-color: var(--white-color);
     }
 
     .card_detail_info_breed,
@@ -73,6 +104,7 @@
       gap: 10px;
       height: 24px;
       margin: 5px;
+      background-color: var(--white-color);
     }
 
     .card_detail_info_adress {
@@ -80,6 +112,7 @@
       display: flex;
       gap: 10px;
       margin-top: 5px;
+      background-color: var(--white-color);
     }
 
     .card_detail_info_adress p {
@@ -88,6 +121,7 @@
       line-height: 19px;
       letter-spacing: 0.005em;
       color: #535353;
+      background-color: var(--white-color);
     }
 
     .card_detail_info_adress img {
@@ -95,12 +129,14 @@
       height: 24px;
       margin-left: 15px;
       margin-top: 5px;
+      background-color: var(--white-color);
     }
 
     .card_detail_info_personality {
       display: flex;
       flex-direction: column;
       margin: 5px;
+      background-color: var(--white-color);
     }
 
     .card_detail_info_personality .title {
@@ -108,12 +144,14 @@
       font-size: 18px;
       line-height: 25px;
       color: #0e172c;
+      background-color: var(--white-color);
     }
 
     .card_detail_info_three_persolanities {
       display: flex;
       justify-content: flex-start;
       gap: 50px;
+      background-color: var(--white-color);
     }
 
     .card_detail_info_one_persolanity {
@@ -126,6 +164,7 @@
       flex-direction: column;
       width: 92px;
       height: 92px;
+      background-color: var(--white-color);
     }
 
     .card_detail_info_one_persolanity p {
@@ -135,10 +174,15 @@
       text-align: center;
       letter-spacing: 0.005em;
       color: #535353;
+      background-color: var(--white-color);
+    }
+    .card_detail_info_one_persolanity img {
+      background-color: var(--white-color);
     }
 
     .card_detail_info_story {
       margin: 5px;
+      background-color: var(--white-color);
     }
 
     .card_detail_info_story p {
@@ -149,6 +193,7 @@
       letter-spacing: 0.005em;
       width: 327px;
       margin: 2px;
+      background-color: var(--white-color);
     }
 
     .card_detail_info_story h3 {
@@ -157,11 +202,13 @@
       line-height: 25px;
       color: #0e172c;
       margin: 2px;
+      background-color: var(--white-color);
     }
 
     .card_detail_info_actions {
       display: flex;
       margin: 5px;
+      background-color: var(--white-color);
     }
 
     .card_detail_info_actions_user {
@@ -170,6 +217,7 @@
       width: 200px;
       justify-content: flex-start;
       gap: 5px;
+      background-color: var(--white-color);
     }
 
     .card_detail_info_actions_user img {
@@ -177,6 +225,7 @@
       height: 48px;
       border-radius: 50%;
       border: 3px solid #85d1ce;
+      background-color: var(--white-color);
     }
 
     .card_detail_info_actions_user p {
@@ -186,6 +235,7 @@
       letter-spacing: 0.004em;
       color: #535353;
       margin-top: 8px;
+      background-color: var(--white-color);
     }
 
     .card_detail_info_actions_user h3 {
@@ -194,6 +244,7 @@
       line-height: 19px;
       color: #0e172c;
       letter-spacing: 0.005em;
+      background-color: var(--white-color);
     }
 
     .card_detail_info_actions button {
@@ -205,12 +256,15 @@
       border-radius: 98px;
       color: var(--white-color);
     }
+    .contenedor_user {
+      background-color: var(--white-color);
+    }
   </style>
 
   <body class="intro">
     <section class="card_detail">
       <div class="card_detail_img">
-        <!-- <img src="/images/img-gato-1.png" alt="" /> -->
+        <img src="/images/img-gato-1.png" alt="" />
       </div>
       <div class="card_detail_info">
         <div class="card_detail_info_title">
@@ -273,7 +327,7 @@
         <div class="card_detail_info_actions">
           <div class="card_detail_info_actions_user">
             <img src="/images/perfil-img.png" alt="" />
-            <div>
+            <div class="contenedor_user">
               <p>Publicado por</p>
               <h3>Maria Dolores</h3>
             </div>
