@@ -110,7 +110,7 @@
   "usuarios": [
     {
       "userEmail": "test@test.com",
-      "userPassword": "",
+      "userPassword": "123456789",
       "id": 1
     }
   ]

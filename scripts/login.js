@@ -5,7 +5,7 @@ form.addEventListener("submit", (e) => {
   let emailU = document.getElementById("email").value;
   let passwordU = document.getElementById("password").value;
 
-  fetch("http://localhost:4000/Usuarios", {
+  fetch("https://api-pets-app.herokuapp.com/usuarios", {
     method: "POST",
     body: JSON.stringify({
       userEmail: emailU,
@@ -16,10 +16,19 @@ form.addEventListener("submit", (e) => {
     },
   })
     .then(() => {
-      window.location.href = "../pages/find.html";
-      alert("La información se guardó correctamente");
+      Swal.fire("Login!", "Ha iniciado sesión!", "success").then((result) => {
+        if (result.value) {
+          window.location.href = "../pages/find.html";
+        }
+      });
     })
     .catch((err) => {
-      alert(err);
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Ha fallado el inicio de sesión!",
+        showConfirmButton: true,
+        footer: err,
+      });
     });
 });
