@@ -1,234 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/style.css" />
-    <title>Adopción Mascotas | Proyecto Final</title>
-  </head>
-  <style>
-    .intro {
-      position: fixed;
-      top: 55%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 350px;
-      height: 927px;
-    }
 
-    .categories_title h1 {
-      font-style: normal;
-      font-weight: 800;
-      font-size: 24px;
-      line-height: 33px;
-      top: 48px;
-      color: var(--black-color);
-    }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/style.css" />
+  <title>Adopción Mascotas | Proyecto Final</title>
+</head>
+<style>
+  .categories {
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 327px;
+    height: 927px;
+    border: 1px solid #e5e5e5;
+  }
 
-    .categories_container h2 {
-      margin-top: 20px;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 25px;
-      color: var(--black-color);
-      margin-bottom: 10px;
-      margin-left: 15px;
-    }
+  .categories_title,
+  .categories_container {
+    margin: 20px;
+    border: 1px solid #e5e5e5;
+  }
 
-    .categories_img_container {
-      display: flex;
-      align-items: space-between;
-      gap: 15px;
-      margin-left: 15px;
-    }
+  .categories_title h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--black-color);
+  }
 
-    .cards_container {
-      margin-left: 15px;
-    }
+  .categories_container h2 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--black-color);
+    margin-bottom: 10px;
+    letter-spacing: 0.0015em;
 
-    .cards_box {
-      width: 327px;
-      height: 500px;
-      display: grid;
-      grid-template-columns: 150px 150px;
-      grid-column-gap: 15px;
-    }
+  }
 
-    .card {
-      width: 156px;
-      height: 240px;
-      border-radius: 20px;
-      margin-top: 10px;
-      cursor: pointer;
-    }
+  .categories_btn_container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+    height: 80px;
+    border: 1px solid #e5e5e5;
 
-    .card h3 {
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 19px;
-      letter-spacing: 0.005em;
-      color: #ffffff;
-      margin: 0px 0px;
-      width: 124px;
-      height: 19px;
-      left: 16px;
-      top: 196px;
-      background-color: transparent;
-    }
+  }
 
-    .card p {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 19px;
-      letter-spacing: 0.005em;
-      color: #cdcdcd;
-      background-color: transparent;
-    }
+  .btn_category {
+    display: flex;
+    background: #0E172C;
+    border-radius: 8px;
+    padding: 8px;
+    gap: 15px;
+  }
 
-    .card .card_img {
-      border-radius: 16px;
-      width: 155px;
-      height: 220px;
-      position: relative;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    }
+  .btn_category:hover {
+    opacity: 0.5;
+  }
 
-    .card .card_info {
-      color: #fff;
-      min-height: 50px;
-      position: absolute;
-      width: 100%;
-      bottom: 0;
-      padding: 0px 20px 20px 20px;
-      line-height: 19px;
-      background-color: transparent;
-    }
+  .btn_category img {
+    background-color: #85D1CE;
+    border-radius: 50%;
+  }
 
-    ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding: 16px 24px;
-      background: var(--white-color);
-    }
-    .navbar {
-      /* position: relative; */
-      bottom: 50px;
-      /* margin-top: 29%; */
-    }
-  </style>
+  .btn_category p {
+    color: white;
+    background: #0E172C;
+    margin-top: 10px;
+  }
 
-  <body class="intro">
-    <section class="categories">
-      <div class="categories_title">
-        <h1>
-          Adopta una adorable <br />
-          mascota
-        </h1>
-      </div>
-      <div class="categories_container">
-        <h2>Categorías de mascotas</h2>
-        <div class="categories_img_container">
-          <a href="/pages/dogs.html"
-            ><img src="/images/categoria-perro.png" alt="perros"
-          /></a>
-          <a href="/pages/cats.html"
-            ><img src="/images/categoria-gato.png" alt="gatos"
-          /></a>
-        </div>
-      </div>
-    </section>
-    <div class="cards_container">
-      <div class="cards_box">
-        <div class="card">
-          <div
-            class="card_img"
-            style="
-              background: linear-gradient(
-                  180deg,
-                  rgba(255, 255, 255, 0) 26.42%,
-                  #000000 99.33%
-                ),
-                url('https://res.cloudinary.com/georgeassan/image/upload/v1564477808/xpDLrRKA_pqiddz.jpg');
-              background-repeat: no-repeat;
-              background-position: center;
-              background-size: cover;
-            "
-          >
-            <div class="card_info">
-              <h3>Margaret Monroe</h3>
-              <p>Lead Designer</p>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div
-            class="card_img"
-            style="
-              background: linear-gradient(
-                  180deg,
-                  rgba(255, 255, 255, 0) 26.42%,
-                  #000000 99.33%
-                ),
-                url('https://res.cloudinary.com/georgeassan/image/upload/v1564477808/xpDLrRKA_pqiddz.jpg');
-              background-repeat: no-repeat;
-              background-position: center;
-              background-size: cover;
-            "
-          >
-            <div class="card_info">
-              <h3>Margaret Monroe</h3>
-              <p>Lead Designer</p>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div
-            class="card_img"
-            style="
-              background: linear-gradient(
-                  180deg,
-                  rgba(255, 255, 255, 0) 26.42%,
-                  #000000 99.33%
-                ),
-                url('https://res.cloudinary.com/georgeassan/image/upload/v1564477808/xpDLrRKA_pqiddz.jpg');
-              background-repeat: no-repeat;
-              background-position: center;
-              background-size: cover;
-            "
-          >
-            <div class="card_info">
-              <h3>Margaret Monroe</h3>
-              <p>Lead Designer</p>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div
-            class="card_img"
-            style="
-              background: linear-gradient(
-                  180deg,
-                  rgba(255, 255, 255, 0) 26.42%,
-                  #000000 99.33%
-                ),
-                url('https://res.cloudinary.com/georgeassan/image/upload/v1564477808/xpDLrRKA_pqiddz.jpg');
-              background-repeat: no-repeat;
-              background-position: center;
-              background-size: cover;
-            "
-          >
-            <div class="card_info">
-              <h3>Margaret Monroe</h3>
-              <p>Lead Designer</p>
-            </div>
-          </div>
-        </div>
+  .cards_container {
+    margin: 15px;
+    border: 1px solid #e5e5e5;
+  }
+
+  .cards_box {
+    height: 500px;
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-column-gap: 15px;
+    border: 1px solid #e5e5e5;
+  }
+
+  .card {
+    width: 100%;
+    height: 240px;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 1px solid #e5e5e5;
+  }
+
+  .card h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.005em;
+    color: #ffffff;
+    margin: 0px 0px;
+    width: 124px;
+    height: 19px;
+    left: 16px;
+    top: 196px;
+    background-color: transparent;
+  }
+
+  .card p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.005em;
+    color: #cdcdcd;
+    background-color: transparent;
+  }
+
+  .card .card_img {
+    border-radius: 16px;
+    width: 155px;
+    height: 220px;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .card .card_info {
+    color: #fff;
+    min-height: 50px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 0px 20px 20px 20px;
+    line-height: 19px;
+    background-color: transparent;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background: var(--white-color);
+  }
+
+  .navbar {
+    /* position: relative; */
+    bottom: 50px;
+    /* margin-top: 29%; */
+  }
+</style>
+
+<body>
+  <section class="categories">
+    <div class="categories_title">
+      <h1>
+        Adopta una adorable <br />
+        mascota
+      </h1>
+    </div>
+    <div class="categories_container">
+      <h2>Categorías de mascotas</h2>
+      <div class="categories_btn_container">
+        <button class="btn_category" id="btnPerros">
+          <img src="../images/Categoría=Perros.png" alt="Perros">
+          <p>Perros</p>
+        </button>
+        <button class="btn_category" id="btnGatos">
+          <img src="../images/Categoría=Gatos.png" alt="Gatos">
+          <p>Gatos</p>
+        </button>
       </div>
     </div>
-    <ul class="navbar">
+
+    <div class="cards_container">
+      <div class="cards_box" id="listarCard">
+
+
+      </div>
+    </div>
+    <!-- <ul class="navbar">
       <li>
         <a href="/pages/categories.html">
           <img src="/images/home.png" alt="home" />
@@ -249,6 +204,9 @@
           <img src="/images/profile.png" alt="perfil" />
         </a>
       </li>
-    </ul>
-  </body>
+    </ul> --> 
+  </section>
+  <script src="/scripts/script.js" type="module"></script>
+</body>
+
 </html>

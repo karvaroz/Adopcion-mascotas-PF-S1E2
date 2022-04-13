@@ -11,6 +11,13 @@
   list-style: none;
 }
 
+html {
+  height: 100%;
+  margin: auto;
+  width: 960px;
+  overflow: auto;
+}
+
 :root {
   --bg-color: #fec7d7;
   --black-color: #0e172c;
@@ -25,7 +32,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  overflow-y: auto;
 }
 
 .intro_title {
@@ -103,7 +109,7 @@
 
 /* FIND */
 
-.intro {
+.find_intro {
   position: fixed;
   top: 50%;
   left: 50%;
