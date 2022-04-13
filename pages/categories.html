@@ -8,152 +8,6 @@
   <link rel="stylesheet" href="/styles/style.css" />
   <title>Adopción Mascotas | Proyecto Final</title>
 </head>
-<style>
-  .categories {
-    margin-top: 48px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 327px;
-    height: 927px;
-    border: 1px solid #e5e5e5;
-  }
-
-  .categories_title,
-  .categories_container {
-    margin: 20px;
-    border: 1px solid #e5e5e5;
-  }
-
-  .categories_title h1 {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 33px;
-    color: var(--black-color);
-  }
-
-  .categories_container h2 {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
-    color: var(--black-color);
-    margin-bottom: 10px;
-    letter-spacing: 0.0015em;
-
-  }
-
-  .categories_btn_container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 15px;
-    height: 80px;
-    border: 1px solid #e5e5e5;
-
-  }
-
-  .btn_category {
-    display: flex;
-    background: #0E172C;
-    border-radius: 8px;
-    padding: 8px;
-    gap: 15px;
-  }
-
-  .btn_category:hover {
-    opacity: 0.5;
-  }
-
-  .btn_category img {
-    background-color: #85D1CE;
-    border-radius: 50%;
-  }
-
-  .btn_category p {
-    color: white;
-    background: #0E172C;
-    margin-top: 10px;
-  }
-
-  .cards_container {
-    margin: 15px;
-    border: 1px solid #e5e5e5;
-  }
-
-  .cards_box {
-    height: 500px;
-    display: grid;
-    grid-template-columns: 150px 150px;
-    grid-column-gap: 15px;
-    border: 1px solid #e5e5e5;
-  }
-
-  .card {
-    width: 100%;
-    height: 240px;
-    border-radius: 20px;
-    margin-top: 10px;
-    cursor: pointer;
-    border: 1px solid #e5e5e5;
-  }
-
-  .card h3 {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 19px;
-    letter-spacing: 0.005em;
-    color: #ffffff;
-    margin: 0px 0px;
-    width: 124px;
-    height: 19px;
-    left: 16px;
-    top: 196px;
-    background-color: transparent;
-  }
-
-  .card p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    letter-spacing: 0.005em;
-    color: #cdcdcd;
-    background-color: transparent;
-  }
-
-  .card .card_img {
-    border-radius: 16px;
-    width: 155px;
-    height: 220px;
-    position: relative;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  }
-
-  .card .card_info {
-    color: #fff;
-    min-height: 50px;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    padding: 0px 20px 20px 20px;
-    line-height: 19px;
-    background-color: transparent;
-  }
-
-  ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 24px;
-    background: var(--white-color);
-  }
-
-  .navbar {
-    /* position: relative; */
-    bottom: 50px;
-    /* margin-top: 29%; */
-  }
-</style>
 
 <body>
   <section class="categories">
@@ -183,28 +37,32 @@
 
       </div>
     </div>
-    <!-- <ul class="navbar">
+    <ul class="navbar">
       <li>
-        <a href="/pages/categories.html">
-          <img src="/images/home.png" alt="home" />
+        <a class="navbar_btn" href="/pages/categories.html">
+          <img class="navbar_img" src="/images/icons/Property 1=home.svg" alt="home" />
+          <p class="hide">Home</p>
         </a>
       </li>
       <li>
         <a href="/pages/messages.html">
-          <img src="/images/vector-mensajes.png" alt="mensajes" />
+          <img class="navbar_img" src="/images/icons/Property 1=message-circle.svg" alt="mensajes" />
+          <p class="hide">Mensajes</p>
         </a>
       </li>
       <li>
         <a href="/pages/favorites.html">
-          <img src="/images/vector-favoritos.png" alt="favorites" />
+          <img class="navbar_img" src="/images/icons/Property 1=heart.svg" alt="favorites" />
+          <p class="hide">Favoritos</p>
         </a>
       </li>
       <li>
         <a href="/pages/profile.html">
-          <img src="/images/profile.png" alt="perfil" />
+          <img class="navbar_img" src="/images/icons/Property 1=user.svg" alt="perfil" />
+          <p class="hide">Perfil</p>
         </a>
       </li>
-    </ul> --> 
+    </ul>
   </section>
   <script src="/scripts/script.js" type="module"></script>
 </body>
