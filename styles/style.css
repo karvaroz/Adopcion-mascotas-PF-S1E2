@@ -47,7 +47,9 @@ html {
   padding: 20px;
 }
 
-.logo_login img{
+.logo_login img,
+.find_loyal_friend_img img,
+.create_new_story_img img {
   background: var(--bg-color);
 }
 

@@ -2,12 +2,16 @@ let form = document.getElementById("loginForm");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  let nameU = document.getElementById("name").value;
+  let lastNameU = document.getElementById("lastname").value;
   let emailU = document.getElementById("email").value;
   let passwordU = document.getElementById("password").value;
 
   fetch("https://api-pets-app.herokuapp.com/usuarios", {
     method: "POST",
     body: JSON.stringify({
+      userName: nameU,
+      userLastname: lastNameU,
       userEmail: emailU,
       userPassword: passwordU,
     }),
