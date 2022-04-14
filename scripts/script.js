@@ -2,12 +2,15 @@ const btnPerros = document.getElementById("btnPerros");
 const btnGatos = document.getElementById("btnGatos");
 const listarCard = document.getElementById("listarCard");
 
+
 btnPerros.addEventListener("click", () => {
   getData("https://api-pets-app.herokuapp.com/perros");
+  listarCard.setAttribute("data-value", "perros");
 });
 
 btnGatos.addEventListener("click", () => {
   getData("https://api-pets-app.herokuapp.com/gatos");
+  listarCard.setAttribute("data-value", "gatos");
 });
 
 
@@ -19,7 +22,6 @@ const getData = async (url) => {
     const { id, name, image, breed } = element;
     listarCard.innerHTML += `
         <div class="card" id=${id}>
-          <a href="/pages/detail.html">
             <div class="card_img" style="
                 background: linear-gradient(
                     180deg,
@@ -36,7 +38,6 @@ const getData = async (url) => {
                 <p>${breed}</p>
               </div>
             </div>
-          </a>
         </div>
     `;
   });
