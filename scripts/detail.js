@@ -2,9 +2,6 @@ const listarCard = document.getElementById("listarCard");
 let idDetalleCard = listarCard.getAttribute("id");
 let categoria = listarCard.getAttribute("data-value");
 
-
-
-
 // idDetalleCard.addEventListener("click", function () {
 //   console.log(idDetalleCard)
 // });
@@ -14,5 +11,6 @@ let categoria = listarCard.getAttribute("data-value");
 //     `https://api-pets-app.herokuapp.com/${categoria}/${id}`
 //   );
 //   const data = await resp.json();
+//   data.find((mascota) => mascota.id === idDetalleCard);
 //   console.log(data);
 // }

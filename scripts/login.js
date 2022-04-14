@@ -20,7 +20,7 @@ form.addEventListener("submit", (e) => {
     },
   })
     .then(() => {
-      Swal.fire("Login!", "Ha iniciado sesión!", "success").then((result) => {
+      Swal.fire("Login Exitoso").then((result) => {
         if (result.value) {
           window.location.href = "../pages/find.html";
         }

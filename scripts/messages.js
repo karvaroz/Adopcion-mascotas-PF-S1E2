@@ -14,7 +14,7 @@ formulario.addEventListener("submit", (e) => {
     },
   })
     .then(() => {
-      Swal.fire("Guardado!", "Hemos recibido tu mensaje!", "success");
+      Swal.fire("Mensaje Recibido");
     })
     .catch((err) => {
       Swal.fire({
