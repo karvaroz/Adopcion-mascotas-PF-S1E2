@@ -563,6 +563,23 @@ img {
   fill: white;
 }
 
+.detail{
+  position: absolute;
+  top: 10%;
+  z-index: 1;
+  background: transparent;
+  right: 60%;
+}
+
+.detail a{
+  background: transparent;
+}
+
+.detail img{
+  border-radius: 100%;
+  background: #85d1ce;
+}
+
 .message_userInfo,
 .icon_back {
   background: var(--white-color);
@@ -607,4 +624,265 @@ img {
   background: var(--white-color);
   margin-left: 10px;
   margin-bottom: 10px;
+}
+
+/* DETALLE MASCOTA */
+
+.card_detail_box {
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 375px;
+  height: 1064px;
+}
+
+.card_detail_img {
+  position: relative;
+}
+
+.card_detail_img img {
+  width: 375px;
+  height: 442px;
+  position: absolute;
+  transform: translate(0%, -0%);
+}
+
+.card_detail_info {
+  width: 375px;
+  position: absolute;
+  top: 475px;
+  border: var(--white-color) solid 1px;
+  border-radius: 16px;
+  background-color: var(--white-color);
+}
+
+.card_detail_info_name {
+  display: flex;
+  width: 90%;
+  gap: 10px;
+  margin-top: 5px;
+  border: var(--white-color) solid 1px;
+  margin: 10px;
+  background-color: var(--white-color);
+}
+
+.card_detail_info_title {
+  margin: 5px;
+  display: flex;
+  background-color: var(--white-color);
+}
+
+.card_detail_info_name p {
+  background-color: var(--white-color);
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.card_detail_info_name img {
+  width: 32px;
+  height: 32px;
+}
+
+.card_detail_info_btn {
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);
+}
+
+.card_detail_info_btn img {
+  margin-top: 11px;
+  fill: #a786df;
+  width: 40px;
+  height: 20px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.card_detail_info_breed_age img,
+.card_detail_info_breed_age p {
+  background-color: var(--white-color);
+}
+
+.card_detail_info_breed_age {
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 100px;
+  background-color: var(--white-color);
+}
+
+.card_detail_info_breed_age p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.005em;
+  color: #535353;
+}
+
+.card_detail_info_breed,
+.card_detail_info_age {
+  display: flex;
+  gap: 10px;
+  height: 24px;
+  margin: 5px;
+  background-color: var(--white-color);
+}
+
+.card_detail_info_adress {
+  margin: 5px;
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+  background-color: var(--white-color);
+}
+
+.card_detail_info_adress p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.005em;
+  color: #535353;
+  background-color: var(--white-color);
+}
+
+.card_detail_info_adress img {
+  width: 24px;
+  height: 24px;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.card_detail_info_personality {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  background-color: var(--white-color);
+}
+
+.card_detail_info_personality .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #0e172c;
+  background-color: var(--white-color);
+  margin-top: 10px;
+}
+
+.card_detail_info_three_persolanities {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+  background-color: var(--white-color);
+}
+
+.card_detail_info_one_persolanity {
+  margin: 2px;
+  border: #a786df solid 2px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 92px;
+  height: 92px;
+  background-color: var(--white-color);
+}
+
+.card_detail_info_one_persolanity p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #535353;
+  background-color: var(--white-color);
+}
+
+.card_detail_info_story {
+  margin-top: 10px;
+  margin: 5px;
+  background-color: var(--white-color);
+}
+
+.card_detail_info_story p {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #535353;
+  letter-spacing: 0.005em;
+  width: 327px;
+  margin: 2px;
+  background-color: var(--white-color);
+}
+
+.card_detail_info_story h3 {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #0e172c;
+  margin: 2px;
+  background-color: var(--white-color);
+}
+
+.card_detail_info_actions {
+  display: flex;
+  margin: 5px;
+  background-color: var(--white-color);
+}
+
+.card_detail_info_actions_user {
+  display: flex;
+  margin: 2px;
+  width: 200px;
+  justify-content: flex-start;
+  gap: 5px;
+  background-color: var(--white-color);
+}
+
+.card_detail_info_actions_user img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 3px solid #85d1ce;
+  background-color: var(--white-color);
+}
+
+.card_detail_info_actions_user p {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.004em;
+  color: #535353;
+  margin-top: 8px;
+  background-color: var(--white-color);
+}
+
+.card_detail_info_actions_user h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #0e172c;
+  letter-spacing: 0.005em;
+  background-color: var(--white-color);
+}
+
+.card_detail_info_actions button {
+  height: 48px;
+  width: 155px;
+  margin: 2px;
+  padding: 10px;
+  background: #0e172c;
+  border-radius: 98px;
+  color: var(--white-color);
+}
+
+.contenedor_user {
+  background-color: var(--white-color);
 }

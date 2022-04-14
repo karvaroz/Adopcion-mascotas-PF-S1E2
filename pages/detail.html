@@ -1,340 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/style.css" />
-    <title>Adopción Mascotas | Proyecto Final</title>
-  </head>
-  <style>
-    .intro {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 375px;
-      height: 729px;
-    }
 
-    .card_detail_img {
-      position: relative;
-    }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/style.css" />
+  <title>Adopción Mascotas | Proyecto Final</title>
+</head>
 
-    .card_detail_img img {
-      width: 375px;
-      height: 442px;
-      position: absolute;
-      transform: translate(0%, -35%);
-    }
-
-    .card_detail_info {
-      width: 375px;
-      position: absolute;
-      top: 30%;
-      border: var(--white-color) solid 1px;
-      border-radius: 16px;
-      background-color: var(--white-color);
-    }
-
-    .card_detail_info_name {
-      display: flex;
-      width: 90%;
-      gap: 10px;
-      margin-top: 5px;
-      background-color: var(--white-color);
-    }
-
-    .card_detail_info_title {
-      margin: 5px;
-      display: flex;
-      background-color: var(--white-color);
-    }
-    .card_detail_info_name p {
-      background-color: var(--white-color);
-    }
-
-    .card_detail_info_name {
-      font-weight: 800;
-      font-size: 24px;
-      line-height: 33px;
-      background-color: var(--white-color);
-    }
-
-    .card_detail_info_name img {
-      width: 32px;
-      height: 32px;
-      background-color: var(--white-color);
-    }
-
-    .card_detail_info_btn {
-      background-color: var(--white-color);
-    }
-
-    .card_detail_info_btn img {
-      width: 48px;
-      height: 48px;
-      background-color: var(--white-color);
-      border-radius: 50%;
-    }
-    .card_detail_info_breed_age img {
-      background-color: var(--white-color);
-    }
-
-    .card_detail_info_breed_age {
-      margin: 5px;
-      display: flex;
-      justify-content: flex-start;
-      gap: 100px;
-      background-color: var(--white-color);
-    }
-
-    .card_detail_info_breed_age p {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 19px;
-      letter-spacing: 0.005em;
-      color: #535353;
-      background-color: var(--white-color);
-    }
-
-    .card_detail_info_breed,
-    .card_detail_info_age {
-      display: flex;
-      gap: 10px;
-      height: 24px;
-      margin: 5px;
-      background-color: var(--white-color);
-    }
-
-    .card_detail_info_adress {
-      margin: 5px;
-      display: flex;
-      gap: 10px;
-      margin-top: 5px;
-      background-color: var(--white-color);
-    }
-
-    .card_detail_info_adress p {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 19px;
-      letter-spacing: 0.005em;
-      color: #535353;
-      background-color: var(--white-color);
-    }
-
-    .card_detail_info_adress img {
-      width: 24px;
-      height: 24px;
-      margin-left: 15px;
-      margin-top: 5px;
-      background-color: var(--white-color);
-    }
-
-    .card_detail_info_personality {
-      display: flex;
-      flex-direction: column;
-      margin: 5px;
-      background-color: var(--white-color);
-    }
-
-    .card_detail_info_personality .title {
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 25px;
-      color: #0e172c;
-      background-color: var(--white-color);
-    }
-
-    .card_detail_info_three_persolanities {
-      display: flex;
-      justify-content: flex-start;
-      gap: 50px;
-      background-color: var(--white-color);
-    }
-
-    .card_detail_info_one_persolanity {
-      margin: 2px;
-      border: #a786df solid 2px;
-      border-radius: 16px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      width: 92px;
-      height: 92px;
-      background-color: var(--white-color);
-    }
-
-    .card_detail_info_one_persolanity p {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
-      text-align: center;
-      letter-spacing: 0.005em;
-      color: #535353;
-      background-color: var(--white-color);
-    }
-    .card_detail_info_one_persolanity img {
-      background-color: var(--white-color);
-    }
-
-    .card_detail_info_story {
-      margin: 5px;
-      background-color: var(--white-color);
-    }
-
-    .card_detail_info_story p {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
-      color: #535353;
-      letter-spacing: 0.005em;
-      width: 327px;
-      margin: 2px;
-      background-color: var(--white-color);
-    }
-
-    .card_detail_info_story h3 {
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 25px;
-      color: #0e172c;
-      margin: 2px;
-      background-color: var(--white-color);
-    }
-
-    .card_detail_info_actions {
-      display: flex;
-      margin: 5px;
-      background-color: var(--white-color);
-    }
-
-    .card_detail_info_actions_user {
-      display: flex;
-      margin: 2px;
-      width: 200px;
-      justify-content: flex-start;
-      gap: 5px;
-      background-color: var(--white-color);
-    }
-
-    .card_detail_info_actions_user img {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      border: 3px solid #85d1ce;
-      background-color: var(--white-color);
-    }
-
-    .card_detail_info_actions_user p {
-      font-weight: 400;
-      font-size: 11px;
-      line-height: 15px;
-      letter-spacing: 0.004em;
-      color: #535353;
-      margin-top: 8px;
-      background-color: var(--white-color);
-    }
-
-    .card_detail_info_actions_user h3 {
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 19px;
-      color: #0e172c;
-      letter-spacing: 0.005em;
-      background-color: var(--white-color);
-    }
-
-    .card_detail_info_actions button {
-      height: 48px;
-      width: 155px;
-      margin: 2px;
-      padding: 10px;
-      background: #0e172c;
-      border-radius: 98px;
-      color: var(--white-color);
-    }
-    .contenedor_user {
-      background-color: var(--white-color);
-    }
-  </style>
-
-  <body class="intro">
-    <section class="card_detail">
-      <div class="card_detail_img">
-        <img src="/images/img-gato-1.png" alt="" />
+<body>
+  <section class="card_detail_box">
+    <div class="detail">
+      <a href="/pages/categories.html">
+        <img src="/images/icons/Property 1=Variant5.svg" alt="back" />
+      </a>
+    </div>
+    <div class="card_detail_img">
+      <img src="https://res.cloudinary.com/karvaroz/image/upload/v1649874337/pets_app/img-perro-1_vtxwir.png" alt="" />
+    </div>
+    <div class="card_detail_info">
+      <div class="card_detail_info_title">
+        <div class="card_detail_info_name">
+          <p>Gato</p>
+          <img src="/images/icons/Property 1=female.svg" alt="female" />
+        </div>
+        <a class="card_detail_info_btn">
+          <img src="/images/icons/Property 1=heart.svg" alt="favorites" />
+        </a>
       </div>
-      <div class="card_detail_info">
-        <div class="card_detail_info_title">
-          <div class="card_detail_info_name">
-            <p>Gato</p>
-            <img src="/images/female.png" alt="female" />
-          </div>
-          <div class="card_detail_info_btn">
-            <img src="/images/guardar.png" alt="favorites" />
-          </div>
-        </div>
 
-        <div class="card_detail_info_breed_age">
-          <div class="card_detail_info_breed">
-            <img src="/images/raza.png" alt="" />
-            <p>Persa</p>
-          </div>
-          <div class="card_detail_info_age">
-            <img src="/images/edad.png" alt="" />
-            <p>3 meses</p>
-          </div>
+      <div class="card_detail_info_breed_age">
+        <div class="card_detail_info_breed">
+          <img src="/images/icons/Property 1=raza.svg" alt="raza" />
+          <p>Persa</p>
         </div>
-
-        <div class="card_detail_info_adress">
-          <img src="/images/vector-direccion.png" alt="" />
-          <p>
-            4140 Parker Rd. Allentown, <br />
-            New Mexico 31134
-          </p>
-        </div>
-
-        <div class="card_detail_info_personality">
-          <p class="title">Personalidad</p>
-          <div class="card_detail_info_three_persolanities">
-            <div class="card_detail_info_one_persolanity">
-              <img src="/images/cariñoso.png" alt="" />
-              <p>Cariñoso</p>
-            </div>
-            <div class="card_detail_info_one_persolanity">
-              <img src="/images/cariñoso.png" alt="" />
-              <p>Cariñoso</p>
-            </div>
-            <div class="card_detail_info_one_persolanity">
-              <img src="/images/cariñoso.png" alt="" />
-              <p>Cariñoso</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card_detail_info_story">
-          <h3>Historia de Rocky</h3>
-          <p>
-            Rocky es un perrito muy lindo y cariñoso, tiene 5 hermanitos más y
-            por cuestiones de espacio y tiempo no podremos cuidar a todos,
-            nuestra misión es encontrar la familia ideal para él y seguro que tú
-            eres la persona indicada.
-          </p>
-        </div>
-
-        <div class="card_detail_info_actions">
-          <div class="card_detail_info_actions_user">
-            <img src="/images/perfil-img.png" alt="" />
-            <div class="contenedor_user">
-              <p>Publicado por</p>
-              <h3>Maria Dolores</h3>
-            </div>
-          </div>
-          <button>Contactar</button>
+        <div class="card_detail_info_age">
+          <img src="/images/icons/Property 1=edad.svg" alt="edad" />
+          <p>3 meses</p>
         </div>
       </div>
-    </section>
-  </body>
+
+      <div class="card_detail_info_adress">
+        <img src="/images/icons/Property 1=map-pin.svg" alt="mapa" />
+        <p>
+          4140 Parker Rd. Allentown, <br />
+          New Mexico 31134
+        </p>
+      </div>
+
+      <div class="card_detail_info_personality">
+        <p class="title">Personalidad</p>
+        <div class="card_detail_info_three_persolanities">
+          <div class="card_detail_info_one_persolanity">
+            <img src="/images/Property 1=Cariñoso.png" alt="personalidad" />
+            <p>Cariñoso</p>
+          </div>
+          <div class="card_detail_info_one_persolanity">
+            <img src="/images/Property 1=Cariñoso.png" alt="personalidad" />
+            <p>Cariñoso</p>
+          </div>
+          <div class="card_detail_info_one_persolanity">
+            <img src="/images/Property 1=Cariñoso.png" alt="personalidad" />
+            <p>Cariñoso</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card_detail_info_story">
+        <h3>Historia de Rocky</h3>
+        <p>
+          Rocky es un perrito muy lindo y cariñoso, tiene 5 hermanitos más y
+          por cuestiones de espacio y tiempo no podremos cuidar a todos,
+          nuestra misión es encontrar la familia ideal para él y seguro que tú
+          eres la persona indicada.
+        </p>
+      </div>
+
+      <div class="card_detail_info_actions">
+        <div class="card_detail_info_actions_user">
+          <img src="/images/perfil-img.png" alt="" />
+          <div class="contenedor_user">
+            <p>Publicado por</p>
+            <h3>Maria Dolores</h3>
+          </div>
+        </div>
+        <button>Contactar</button>
+      </div>
+    </div>
+  </section>
+</body>
+
 </html>
