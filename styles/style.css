@@ -571,6 +571,10 @@ img {
   right: 60%;
 }
 
+button {
+  cursor: pointer;
+}
+
 .detail a{
   background: transparent;
 }

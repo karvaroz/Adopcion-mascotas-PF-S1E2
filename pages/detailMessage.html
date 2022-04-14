@@ -25,9 +25,14 @@
         <p>Aún no hay mensajes</p>
       </div>
       <div class="chat_container">
-        <input type="text" placeholder="Aa" />
+        <form id="formulario">
+          <input type="text" placeholder="Aa" id="mensaje"/>
+          <button type="submit" id="btnMensaje" style="border: none; color: var(--bg-color)">E</button>
+        </form>
         <img src="/images/chat.png" alt="" />
       </div>
     </section>
+    <script src="/scripts/messages.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
