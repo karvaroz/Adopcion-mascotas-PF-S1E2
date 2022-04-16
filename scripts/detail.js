@@ -1,16 +1,22 @@
-const listarCard = document.getElementById("listarCard");
-let idDetalleCard = listarCard.getAttribute("id");
-let categoria = listarCard.getAttribute("data-value");
+export const getDetail = () => {
+  document.addEventListener("click", (e) => {
+    if (e.classList.contains("card")) {
+      alert("hola");
+      let id = target.id;
+      let categoria = e.getAttribute("data-value");
+      localStorage.setItem("categoria", categoria);
+      localStorage.setItem("idCard", id);
+      window.location.href = "../pages/detail.html";
+    }
+  });
 
-// idDetalleCard.addEventListener("click", function () {
-//   console.log(idDetalleCard)
-// });
-
-// async function detail(id) {
-//   const resp = await fetch(
-//     `https://api-pets-app.herokuapp.com/${categoria}/${id}`
-//   );
-//   const data = await resp.json();
-//   data.find((mascota) => mascota.id === idDetalleCard);
-//   console.log(data);
-// }
+  document.addEventListener("DOMContentLoaded", async () => {
+    let idCard = localStorage.getItem("idCard");
+    let categoria = localStorage.getItem("categoria");
+    let res = await fetch(
+      `https://api-pets-app.herokuapp.com/${categoria}/${idCard}`
+    );
+    let data = await res.json();
+    console.log(data);
+  });
+};
