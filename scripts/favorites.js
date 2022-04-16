@@ -21,20 +21,10 @@ btnFavorito.addEventListener("click", (e) => {
     },
   })
     .then(() => {
-      Swal.fire("Favorito agregado exitosamente").then((result) => {
-        if (result.value) {
-          window.location.href = "../pages/ffavorites.html";
-        }
-      });
+      Swal.fire("Favorito agregado exitosamente");
     })
     .catch((err) => {
-      Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: "Ha fallado agregar a favoritos!",
-        showConfirmButton: true,
-        footer: err,
-      });
+      Swal.fire("Ha ocurrido un error", err);
     });
 });
 
