@@ -1,7 +1,7 @@
 export const getDetail = () => {
   document.addEventListener("click", (e) => {
     if (e.classList.contains("card")) {
-      alert("hola");
+     alert("hola");
       let id = target.id;
       let categoria = e.getAttribute("data-value");
       localStorage.setItem("categoria", categoria);

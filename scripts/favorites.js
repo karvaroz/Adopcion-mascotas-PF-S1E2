@@ -1,14 +1,13 @@
 //Agregar a favoritos
 let btnFavorito = document.getElementById("favorite");
 
-btnFavorito.addEventListener("click", (e) => {
-  e.preventDefault();
+btnFavorito.addEventListener("click", () => {
   let id = document.getElementById("id").value;
   let name = document.getElementById("name").value;
   let breed = document.getElementById("breed").value;
   let image = document.getElementById("image").value;
 
-  fetch("https://api-pets-app.herokuapp.com/favoritos", {
+    fetch("https://api-pets-app.herokuapp.com/favoritos", {
     method: "POST",
     body: JSON.stringify({
       id: id,
